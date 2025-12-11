@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-    color: rgba(43, 59, 82);
-}
-
 ul{
     list-style: none;
 }
@@ -27,9 +22,11 @@ ul{
     width: 100%;
     padding: 20px;
     justify-content: space-between;
-    color: rgba(43, 59, 82);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(252, 132, 71);
     letter-spacing: 2px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .nav-links{
@@ -37,7 +34,13 @@ ul{
     align-items: center;
     cursor: pointer;
 }
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 0 0 8px rgba(252, 132, 71);
 
+}
 .nav-links li{
     margin: 0 30px;
     text-transform: capitalize;
@@ -46,8 +49,8 @@ ul{
 header{
     width: 100vw;
     height: 100vh;
-    background-image: url("./img/Header.jpg");
-    background-position: bottom;
+    background-image: url("./img/landing.jpg");
+    background-position: center ;
     background-size: cover;
     display: flex;
     align-items: flex-end;
@@ -55,26 +58,34 @@ header{
 }
 
 .header-content{
+    
     margin-bottom: 400px;
-    color: rgba(242, 162, 52);
+    width: 800px;
     text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    
 }
 
 .header-content h2{
-    font-size: 4vmin;
+    color: #fff;
+    font-size: 5vmin;
     letter-spacing: 2px;
     text-transform: capitalize;
 }
 
 .line{
-    width: 250px;
+    width: 180px;
     height: 4px;
-    background: rgb(167, 39, 3);
+    background: white;
     margin: 10px auto;
     border-radius: 5px;
+    
 }
 
 .header-content h1{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 8px rgba(252, 132, 71);
     font-size: 7vmin;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -82,9 +93,74 @@ header{
 }
 
 .ctn{
-    background-color: rgba(165, 153, 165);
+    background-color: orangered;
     padding: 8px 15px;
+    margin-top: 10px;
     border-radius: 15px;
     color: rgba(43, 59, 82);
+    border: none;
     text-transform: capitalize;
+    text-decoration: none;
+    color: white;
 }
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    font-size: 4vmin;
+    text-align: center;
+}
+
+
+.grid-box1,
+.grid-box2,
+.grid-box3,
+.grid-box4{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 500px;
+    background: url("./img/card1.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+}
+
+
+
+.events .row{
+    margin-top: 30px;
+}
+
+.content-box{
+    /* background-color: aqua; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 10px; */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    place-items: center;
+}
+.grid{
+    width: 500px;
+    padding: 8px;
+    
+}
+.box {
+  /* width: 320px; */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;       /* how many lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
