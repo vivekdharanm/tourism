@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(43, 59, 82);
+}
+
+ul{
+    list-style: none;
+}
+
+.active a{
+    color: rgba(165, 153, 165);
+    text-decoration: underline 2px;
+    text-underline-offset: 5px;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    color: rgba(43, 59, 82);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-links li{
+    margin: 0 30px;
+    text-transform: capitalize;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./img/Header.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content{
+    margin-bottom: 400px;
+    color: rgba(242, 162, 52);
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.line{
+    width: 250px;
+    height: 4px;
+    background: rgb(167, 39, 3);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.ctn{
+    background-color: rgba(165, 153, 165);
+    padding: 8px 15px;
+    border-radius: 15px;
+    color: rgba(43, 59, 82);
+    text-transform: capitalize;
+}
