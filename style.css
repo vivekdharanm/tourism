@@ -23,11 +23,12 @@ ul{
     padding: 20px;
     justify-content: space-between;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px rgba(252, 132, 71);
+    text-shadow: 2px 2px 4px rgbargba(255, 68, 0, 0.802);
     letter-spacing: 2px;
-    text-transform: uppercase;
     cursor: pointer;
+    font-size: 30px;
 }
+
 
 .nav-links{
     display: flex;
@@ -39,7 +40,7 @@ ul{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-    text-shadow: 0 0 8px rgba(252, 132, 71);
+    text-shadow: 0 0 8px rgba(255, 68, 0, 0.802);
 
 }
 
@@ -53,7 +54,6 @@ header{
     background-image: url("./img/landing.jpg");
     background-position: center ;
     background-size: cover;
-    background-attachment: fixed;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -80,7 +80,7 @@ header{
 .line{
     width: 180px;
     height: 4px;
-    background: rgba(252, 132, 71);
+    background: rgba(255, 68, 0, 0.802);
     margin: 10px auto;
     border-radius: 5px;
     
@@ -96,7 +96,7 @@ header{
 }
 
 .ctn{
-    background-color: orangered;
+    background-color: rgba(255, 68, 0, 0.802);
     padding: 8px 15px;
     margin-top: 10px;
     border-radius: 15px;
@@ -110,15 +110,14 @@ header{
 
 section{
     width: 80%;
-    margin: 80px auto;
+    margin: 0px auto;
 }
 
 .title{
     font-size: 2vmin;
     text-align: center;
-    position: relative;
-    bottom: 30px;
     margin-bottom: 90px;
+    padding-top: 30px;
     
 }
 
@@ -180,14 +179,20 @@ section{
     margin-top: 30px;
 }
 
+.events{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, whitesmoke, rgb(246, 183, 172), whitesmoke);
+    backdrop-filter: blur(50px);
+    
+}
+
 .content-box{
     width: 100%;
     display: grid;
-    /* flex-wrap: wrap; */
     place-items: center;
     grid-template-columns: repeat(4,1fr);
     gap: 50px;
-    /* justify-content: space-between; */
     margin-top: 20px;
     position: relative;
     bottom: 50px;
@@ -200,6 +205,7 @@ section{
     padding: 5px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
 }
 
 .box {
@@ -220,7 +226,7 @@ section{
     padding: 0px 8px;
     margin-top: 20px;
     font-size: 22px;
-    color:  rgba(252, 132, 71);
+    color:  rgba(255, 68, 0, 0.802);
 }
 
 .grid p{
@@ -253,14 +259,78 @@ section{
 }
 
 .explore-content h1{
+    letter-spacing: 5px;
     font-size: 5vmin;
-    margin: 50px;
+    margin-bottom: 165px;
 }
 
 .explore-content p{
-    color: rgb(221, 221, 221);
+        width: 500px;
+        color: rgb(221, 221, 221);
 }
 
 .explore-content .ctn{
-    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.tours .row .col{
+    width: 80%;
+    height: 50vh !important;
+}
+
+.tours .img-gallery{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.img-gallery img{
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.row{
+    display: flex;
+    margin-top: 50px;
+}
+
+.content-col{
+    margin-top: 100px;
+}
+
+.tours h1{
+    font-size: 80px;
+    margin-bottom: 10px;
+    color: rgba(255, 68, 0, 0.802);
+}
+
+.content-col p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;       
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 15px;
+    width: 600px;
+}
+
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin-top: 80px;
+    background: rgba(255, 68, 0, 0.802);
+    text-align: center;
+}
+
+.footer p{
+    margin: 20px auto;
+    color: whitesmoke;
+
+}
+
+.my-sig{
+    position: relative;
+    color: #ff6d39;
+    /* bottom: 30px; */
 }
