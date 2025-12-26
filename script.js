@@ -57,6 +57,7 @@
 
 // console.log(addUser("kumar", 25, "ajith street", "chennai"));
 
+
 //Prototype Inheritance 
 
 const studMethod = {
