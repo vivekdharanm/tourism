@@ -313,3 +313,22 @@ section{
     width: 600px;
 }
 
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin-top: 80px;
+    background: rgba(255, 68, 0, 0.802);
+    text-align: center;
+}
+
+.footer p{
+    margin: 20px auto;
+    color: whitesmoke;
+
+}
+
+.my-sig{
+    position: relative;
+    color: #ff6d39;
+}
